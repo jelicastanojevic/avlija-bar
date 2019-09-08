@@ -1,16 +1,18 @@
 <template>
   <div class="home">
     <carousel :images="urls"></carousel>
+    <container-about></container-about>
   </div>
 </template>
 
 <script>
-import Carousel from "@/components/Carousel.vue";
-
+import Carousel from "@/components/Carousel";
+import ContainerAbout from "@/components/container/ContainerAbout";
 export default {
   name: "home",
   components: {
-    Carousel
+    Carousel,
+    ContainerAbout
   },
   data() {
     return {
