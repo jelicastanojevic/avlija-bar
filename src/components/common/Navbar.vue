@@ -28,29 +28,33 @@
       </div>
 
       <ul class="nav-links" :class="{ open: openedMobileNav }">
-        <router-link to="/">
+        <router-link to="/" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">POČETNA</a></li>
         </router-link>
-        <router-link to="/about">
+        <router-link to="/about" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">O NAMA</a></li>
         </router-link>
-        <router-link to="/offer">
+        <router-link to="/offer" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">PONUDA</a></li>
         </router-link>
-        <router-link to="/">
+        <router-link
+          to="/"
+          @click="toggleMobileNav"
+          class="nav-brand-desktop--display"
+        >
           <div class="nav-brand">
-            <a class="nav-item nav-brand-desktop--display" href="#">
+            <a class="nav-item" href="#">
               <img src="@/assets/newLogo.png" />
             </a>
           </div>
         </router-link>
-        <router-link to="/events">
+        <router-link to="/events" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">DEŠAVANJA</a></li>
         </router-link>
-        <router-link to="/gallery">
+        <router-link to="/gallery" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">GALERIJA</a></li>
         </router-link>
-        <router-link to="/contact">
+        <router-link to="/contact" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">KONTAKT</a></li>
         </router-link>
       </ul>
@@ -72,8 +76,8 @@ export default {
     }
   },
   methods: {
-    handleScroll(e) {
-      if (e.deltaY !== 0) {
+    handleScroll() {
+      if (window.scrollY > 0) {
         this.scrolled = true;
       } else {
         this.scrolled = false;
@@ -84,10 +88,10 @@ export default {
     }
   },
   created() {
-    window.addEventListener("wheel", this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
-    window.removeEventListener("wheel", this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 };
 </script>
@@ -126,6 +130,16 @@ export default {
 .nav-item img {
   height: 5rem;
   width: 5rem;
+}
+
+.nav-link {
+  padding: 1rem;
+}
+
+.nav-link a {
+  color: #fff8d5;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 a.nav-item-logo--mobile {
@@ -196,6 +210,7 @@ a.nav-item-logo--mobile {
     width: 100%;
     height: 100%;
     background: transparent;
+    background-image: none !important;
     clip-path: none;
     -webkit-clip-path: none;
   }
@@ -213,18 +228,16 @@ a.nav-item-logo--mobile {
 
   .nav-link {
     margin-top: 1rem;
-    padding: 1rem;
   }
 
   .nav-link a {
-    color: #fff8d5;
     font-size: 1.1rem;
-    font-weight: bold;
   }
 
   .nav-link a:hover {
     color: #fff8d5;
   }
+
   .nav-item--border:after {
     content: "";
     display: block !important;
@@ -236,9 +249,9 @@ a.nav-item-logo--mobile {
   }
 
   .nav-item--border:hover:after {
-    color: white;
+    color: #fff8d5;
     width: 100%;
-    background: white;
+    background: #fff8d5;
   }
 
   .nav-brand--mobile-display {
