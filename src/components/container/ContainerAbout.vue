@@ -10,7 +10,7 @@
         title="AVLIJA BAR"
         subtitle="Vlasotince"
         text="Lociran u Dorćolskom delu Vlasotinca, u blizini reke Vlasine, Avlija bar je mesto koje će Vas oduševiti svojom energijom i izvrsnom uslugom."
-        button="Nastavi obilazak"
+        :button="buttonText"
       ></card>
     </div>
   </div>
@@ -23,6 +23,11 @@ export default {
   components: {
     Card,
     ImageBox
+  },
+  computed: {
+    buttonText() {
+      return this.$route.path === "/" ? "Nastavi obilazak" : null;
+    }
   }
 };
 </script>

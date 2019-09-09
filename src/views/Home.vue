@@ -4,6 +4,7 @@
     <container-about></container-about>
     <container-menu></container-menu>
     <hero></hero>
+    <container-gallery-and-instagram></container-gallery-and-instagram>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Carousel from "@/components/Carousel";
 import ContainerAbout from "@/components/container/ContainerAbout";
 import ContainerMenu from "@/components/container/ContainerMenu";
 import Hero from "@/components/Hero";
+import ContainerGalleryAndInstagram from "@/components/container/ContainerGalleryAndInstagram";
 
 export default {
   name: "home",
@@ -19,7 +21,8 @@ export default {
     Carousel,
     ContainerAbout,
     ContainerMenu,
-    Hero
+    Hero,
+    ContainerGalleryAndInstagram
   },
   data() {
     return {
@@ -28,3 +31,6 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+</style>

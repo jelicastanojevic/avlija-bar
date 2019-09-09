@@ -87,8 +87,4 @@ export default {};
 strong {
   color: #fff8d5;
 }
-
-.button.is-large {
-  display: none;
-}
 </style>
