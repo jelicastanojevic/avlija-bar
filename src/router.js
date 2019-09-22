@@ -20,5 +20,17 @@ export default new Router({
       // route level code-splitting
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
+    {
+      path: '/offer',
+      name: 'offer',
+      // route level code-splitting
+      component: () => import(/* webpackChunkName: "about" */ './views/Offer.vue'),
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      // route level code-splitting
+      component: () => import(/* webpackChunkName: "about" */ './views/Gallery.vue'),
+    },
   ],
 });

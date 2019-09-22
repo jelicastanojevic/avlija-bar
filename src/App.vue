@@ -1,16 +1,27 @@
 <template>
   <div id="app">
     <navbar></navbar>
-    <router-view />
+    <transition
+      appear
+      appear-active-class="animated faster fadeIn"
+      mode="out-in"
+      enter-active-class="animated faster fadeIn"
+      leave-active-class="animated faster fadeOut"
+    >
+      <router-view />
+    </transition>
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
-import Navbar from "@/components/common/Navbar.vue";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    MyFooter: Footer
   }
 };
 </script>
