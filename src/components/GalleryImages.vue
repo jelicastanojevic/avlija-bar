@@ -1,11 +1,7 @@
 <template>
   <div class="gallery-images">
     <figure class="gallery__item gallery_item--1">
-      <img
-        src="../assets/DSC_5824-400x284.jpg"
-        class="gallery__img"
-        alt="Image 1"
-      />
+      <img src="../assets/saksofon.jpg" class="gallery__img" alt="Image 1" />
     </figure>
     <figure class="gallery__item gallery__item--2">
       <img
@@ -50,15 +46,11 @@
       />
     </figure>
     <figure class="gallery__item gallery__item--8">
-      <img
-        src="../assets/DSC_6219-400x284.jpg"
-        class="gallery__img"
-        alt="Image 6"
-      />
+      <img src="../assets/pljeskavice.jpg" class="gallery__img" alt="Image 6" />
     </figure>
     <figure class="gallery__item gallery__item--9">
       <img
-        src="../assets/IMG_3928-400x284.jpg"
+        src="../assets/kobasiceAvlija.jpg"
         class="gallery__img"
         alt="Image 6"
       />

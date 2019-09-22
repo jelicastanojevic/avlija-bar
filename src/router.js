@@ -38,5 +38,11 @@ export default new Router({
       // route level code-splitting
       component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue'),
     },
+    {
+      path: '/event',
+      name: 'event',
+      // route level code-splitting
+      component: () => import(/* webpackChunkName: "about" */ './views/Event.vue'),
+    },
   ],
 });

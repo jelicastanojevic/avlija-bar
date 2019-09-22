@@ -48,7 +48,7 @@
             </a>
           </div>
         </router-link>
-        <router-link to="/events" @click.native="toggleMobileNav">
+        <router-link to="/event" @click.native="toggleMobileNav">
           <li class="nav-link nav-item--border"><a href="">DEŠAVANJA</a></li>
         </router-link>
         <router-link to="/gallery" @click.native="toggleMobileNav">
