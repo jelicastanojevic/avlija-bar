@@ -22,7 +22,9 @@
       ></iframe>
     </div>
     <div class="block--instagram-tag block--instagram-font">
-      <a href="www.google.rs">@avlijabar</a>
+      <a href="https://www.instagram.com/avlija.bar/" target="blank"
+        >@avlijabar</a
+      >
     </div>
   </div>
 </template>

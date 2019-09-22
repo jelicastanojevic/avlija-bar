@@ -32,5 +32,11 @@ export default new Router({
       // route level code-splitting
       component: () => import(/* webpackChunkName: "about" */ './views/Gallery.vue'),
     },
+    {
+      path: '/contact',
+      name: 'contact',
+      // route level code-splitting
+      component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue'),
+    },
   ],
 });

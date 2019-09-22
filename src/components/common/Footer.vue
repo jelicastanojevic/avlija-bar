@@ -2,8 +2,20 @@
   <footer class="footer">
     <div class="columns">
       <div class="column column-icons">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
+        <a
+          href="https://www.facebook.com"
+          class="social-net-link"
+          target="blank"
+        >
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/avlija.bar/"
+          class="social-net-link"
+          target="blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
       <div class="column column-copyright">
         <span class="footer-block--padding">
@@ -31,6 +43,7 @@ export default {};
   width: 3em;
   height: 6em !important;
   padding-right: 1em;
+  cursor: pointer;
 }
 
 .svg-inline--fa {
@@ -52,6 +65,15 @@ export default {};
   align-items: center;
   justify-content: center;
   padding: 0;
+}
+
+.columns {
+  padding-top: 0.75rem;
+}
+
+.social-net-link {
+  font-size: 1rem;
+  color: #2c3e50;
 }
 
 @media screen and (min-width: 1020px) {
