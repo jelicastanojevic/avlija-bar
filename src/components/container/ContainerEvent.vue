@@ -8,8 +8,9 @@
       <card
         class="level-right level--overflow-not-hidden"
         title="DOGAĐAJI"
-        text="Lociran u Dorćolskom delu Vlasotinca, u blizini reke Vlasine, Avlija bar je mesto koje će Vas oduševiti svojom energijom i izvrsnom uslugom."
-        :button="buttonText"
+        text="Avlija bar je mesto koje će Vas oduševiti svojom energijom i izvrsnom uslugom. Proslavite rođendan ili podelite lepe trenutke sa prijateljima u prijatnom ambijentu našeg lokala."
+        button="Pogledaj galeriju"
+        page="/gallery"
       ></card>
     </div>
   </div>
@@ -22,11 +23,6 @@ export default {
   components: {
     Card,
     ImageBox
-  },
-  computed: {
-    buttonText() {
-      return this.$route.path === "/" ? "Nastavi obilazak" : null;
-    }
   }
 };
 </script>

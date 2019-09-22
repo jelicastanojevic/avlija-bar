@@ -11,6 +11,7 @@
         subtitle="Vlasotince"
         text="Lociran u Dorćolskom delu Vlasotinca, u blizini reke Vlasine, Avlija bar je mesto koje će Vas oduševiti svojom energijom i izvrsnom uslugom."
         :button="buttonText"
+        href="#container-menu"
       ></card>
     </div>
   </div>

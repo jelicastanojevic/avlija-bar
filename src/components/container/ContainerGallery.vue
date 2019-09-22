@@ -11,6 +11,7 @@
         title="Galerija"
         text="Pogledajte šta je to što Bistro izdvaja od ostalih. Ambijent, hrana ili dešavanja?"
         button="Pogledaj"
+        page=""
       ></card>
     </div>
   </div>

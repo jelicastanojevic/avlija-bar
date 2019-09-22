@@ -8,7 +8,16 @@
             {{ subtitle }}
           </h3>
           <p class="subtitle subtitle-padding">{{ text }}</p>
-          <a class="button is-large" v-if="button != null">{{ button }}</a>
+          <router-link :to="page">
+            <a class="button is-large" v-if="button != null">{{ button }}</a>
+          </router-link>
+          <a
+            :class="{ 'button-visibility': href == null }"
+            class="button is-large"
+            v-if="button != null"
+            :href="href"
+            >{{ button }}</a
+          >
         </div>
       </div>
     </section>
@@ -21,7 +30,9 @@ export default {
     title: String,
     subtitle: String,
     text: String,
-    button: String
+    button: String,
+    page: String,
+    href: String
   }
 };
 </script>
@@ -50,6 +61,9 @@ export default {
   border: 1px solid #fff8d5;
 }
 
+.button-visibility {
+  display: none;
+}
 @media screen and (min-width: 1020px) {
   .card {
     padding: 0rem;

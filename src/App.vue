@@ -34,6 +34,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #0c0c0c;
+  background-image: url("./assets/dot-pattern.png");
 }
 #nav {
   padding: 30px;

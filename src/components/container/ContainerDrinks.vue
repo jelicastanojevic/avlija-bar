@@ -4,7 +4,7 @@
       <card
         class="level-left level--overflow-not-hidden"
         title="PIĆE"
-        text="Uživajte u obroku spremljenom od strane iskusnih kulinarskih majstora. Da li ste za doručak (do 13h) ili dnevni meni?"
+        text="Da li ste za jutarnju kafu ili dobru čašu vina? Izbor je samo Vaš. Dođite sa društvom da uz hranu i vino stvaramo uspomene."
       ></card>
       <image-box
         class="level-right level--overflow-hidden"

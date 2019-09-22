@@ -6,6 +6,7 @@
         title="MENI"
         text="Uživajte u obroku spremljenom od strane iskusnih kulinarskih majstora. Da li ste za doručak (do 13h) ili dnevni meni?"
         button="Izaberite"
+        page="/offer"
       ></card>
       <image-box
         class="level-right level--overflow-hidden"
@@ -36,7 +37,7 @@ export default {
 
 @media screen and (min-width: 1020px) {
   .container-menu {
-     padding: 100px 0px;
+    padding: 100px 0px;
   }
 }
 </style>
