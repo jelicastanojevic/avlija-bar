@@ -86,7 +86,7 @@ export default {};
 <style lang="scss">
 .gallery-images {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(337px, 1fr));
 }
 
 .gallery__img {
@@ -95,6 +95,6 @@ export default {};
   object-fit: cover;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
 }
 </style>

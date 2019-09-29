@@ -64,14 +64,14 @@ export default {
 .button-visibility {
   display: none;
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .card {
     padding: 0rem;
     width: 50%;
   }
 
   .section-container--size {
-    padding: 110px;
+    padding: 90px;
   }
 
   .title,

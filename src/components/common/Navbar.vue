@@ -185,7 +185,7 @@ a.nav-item-logo--mobile {
   margin: 5px;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .navbar {
     position: fixed;
     min-height: 0;
@@ -222,8 +222,8 @@ a.nav-item-logo--mobile {
   }
 
   .nav-item img {
-    height: 160px;
-    width: 160px;
+    height: 128px;
+    width: 128px;
   }
 
   .nav-link {

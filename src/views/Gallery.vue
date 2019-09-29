@@ -22,7 +22,7 @@ export default {
   background-image: url("../assets/dot-pattern.png");
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .nav-background {
     height: 30vh;
   }

@@ -33,7 +33,7 @@ export default {
   background-image: url("../../assets/unutra.jpg") !important;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .container-menu {
     padding: 100px 0px;
   }

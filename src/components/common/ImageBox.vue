@@ -1,6 +1,6 @@
 <template>
   <div class="image-box">
-    <img :src="getImgUrl(image)" alt="Avlija bar" width="540" height="548" />
+    <img :src="getImgUrl(image)" alt="Avlija bar" width="500" height="333" />
   </div>
 </template>
 
@@ -20,18 +20,18 @@ export default {
   display: none;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .image-box {
     display: inline-block;
     position: relative;
     margin: 0;
     overflow: hidden;
-    width: 500px;
+    width: 400px;
   }
 
   .image-box img {
     display: block;
-    width: 100%;
+    // width: 80%;
     height: auto;
     max-width: 100%;
     transition: all 2s;

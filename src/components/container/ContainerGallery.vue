@@ -4,10 +4,10 @@
       <image-box
         class="level-left"
         image="wines.jpg"
-        style="width:370px;"
+        style="width:296px;"
       ></image-box>
       <card
-        class="level-right"
+        class="level-right level-right-gallery"
         title="Galerija"
         text="Pogledajte šta je to što Bistro izdvaja od ostalih. Ambijent, hrana ili dešavanja?"
         button="Pogledaj"
@@ -38,19 +38,30 @@ export default {
   background: #0c0c0c;
   background-repeat: repeat;
   background-image: url("../../assets/dot-pattern.png") !important;
-  padding: 100px 0px;
+  padding: 0px;
 }
 
 .container-gallery-wrapper {
   height: 338px !important;
 }
-@media screen and (min-width: 1020px) {
-  .level-right {
+
+.level-right-gallery {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 816px) {
+  .level-right-gallery {
     display: block;
+    width: 50%;
+  }
+
+  .container-gallery {
+    padding: 80px 0px;
   }
 
   .container-gallery-wrapper {
-    height: 597px !important;
+    height: 522px !important;
   }
 }
 </style>

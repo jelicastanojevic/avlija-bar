@@ -156,7 +156,7 @@ export default {};
 .container-images--instagram {
   display: flex;
   justify-content: center;
-  height: 598px;
+  height: 479px;
   width: 100%;
 }
 
@@ -172,7 +172,7 @@ export default {};
 
 a,
 .block--instagram-font {
-  font-size: 18px;
+  font-size: 14.4px;
   line-height: 1.2;
   letter-spacing: 1px;
   font-weight: 600;
@@ -185,16 +185,17 @@ iframe {
 
 .container-images--instagram {
   height: 454px;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .container-images--instagram {
-    height: 454px;
-    width: 400px;
+    height: 353px;
+    width: 326px;
   }
 
   .container--instagram {
-    padding: 100px 0px;
+    padding: 80px 0px;
   }
 
   .widget-visibility--mobile {

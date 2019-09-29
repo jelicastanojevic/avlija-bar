@@ -76,7 +76,7 @@ export default {};
   color: #2c3e50;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .column-icons {
     text-align: left !important;
   }

@@ -31,7 +31,7 @@
   margin: 3rem;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .title.is-3 {
     font-size: 2.5rem;
   }

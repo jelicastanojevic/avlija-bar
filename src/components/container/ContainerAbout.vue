@@ -44,10 +44,11 @@ export default {
   margin: 0 !important;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
   .level {
     margin-right: 90px;
     margin-left: 90px;
+    margin-top: -20px;
     padding-left: 15px;
     padding-right: 15px;
     justify-content: center;

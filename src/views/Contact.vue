@@ -34,7 +34,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 816px) {
 }
 </style>
 AIzaSyAt9ytgb_fAeTb83HpIaSkROsMdeF51RrA
