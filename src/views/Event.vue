@@ -1,8 +1,6 @@
 <template>
   <div class="event">
-    <div class="image-container">
-      <img src="../assets/unutra.jpg" style="width:100%; height: 758px;"></img>
-    </div>
+    <div class="image-container"></div>
     <container-event></container-event>
   </div>
 </template>
@@ -19,6 +17,10 @@ export default {
 <style lang="scss">
 .image-container {
   height: 300px;
-  overflow: hidden;
+  background-image: url("../assets/unutra.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>

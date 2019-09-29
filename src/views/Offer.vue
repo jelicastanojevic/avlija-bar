@@ -1,10 +1,8 @@
 <template>
   <div class="offer">
-    <div class="image-container">
-      <img src="../assets/unutra.jpg" style="width:100%; height: 758px;"></img>
-    </div>
+    <div class="image-container"></div>
     <hero-about></hero-about>
-     <!-- <div class="columns columns--background columns--padding">
+    <!-- <div class="columns columns--background columns--padding">
       <div class="column">
         <offer-box title="Hrana" image="sausages-menu.jpg" button="Pogledajte"></offer-box>
       </div>
@@ -12,7 +10,7 @@
         <offer-box title="Piće" image="wines.jpg" button="Pogledajte"></offer-box>
       </div>
     </div> -->
-     <container-food></container-food>
+    <container-food></container-food>
     <container-drinks></container-drinks>
   </div>
 </template>
@@ -43,7 +41,11 @@ export default {
 
 .image-container {
   height: 300px;
-  overflow: hidden;
+  background-image: url("../assets/unutra.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .columns--background {

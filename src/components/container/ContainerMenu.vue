@@ -4,7 +4,7 @@
       <card
         class="level-left level--overflow-not-hidden"
         title="MENI"
-        text="Uživajte u obroku spremljenom od strane iskusnih kulinarskih majstora. Da li ste za doručak (do 13h) ili dnevni meni?"
+        text="Uživajte u obroku spremljenom od strane iskusnih kulinarskih majstora. Da li ste za doručak, dnevni ili večernji meni?"
         button="Izaberite"
         page="/offer"
       ></card>
@@ -33,6 +33,7 @@ export default {
   background-color: #0c0c0c;
   background-repeat: repeat;
   background-image: url("../../assets/unutra.jpg") !important;
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 1020px) {

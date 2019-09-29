@@ -2,7 +2,7 @@
   <div class="home">
     <carousel :images="urls"></carousel>
     <container-about></container-about>
-    <container-menu></container-menu>
+    <container-menu id="container-menu"></container-menu>
     <hero></hero>
     <container-gallery-and-instagram></container-gallery-and-instagram>
   </div>

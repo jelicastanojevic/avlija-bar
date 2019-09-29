@@ -1,6 +1,6 @@
 <template>
   <div class="container-gallery">
-    <div class="level level--margin">
+    <div class="level level--margin container-gallery-wrapper">
       <image-box
         class="level-left"
         image="wines.jpg"
@@ -11,7 +11,7 @@
         title="Galerija"
         text="Pogledajte šta je to što Bistro izdvaja od ostalih. Ambijent, hrana ili dešavanja?"
         button="Pogledaj"
-        page=""
+        page="/gallery"
       ></card>
     </div>
   </div>
@@ -41,9 +41,16 @@ export default {
   padding: 100px 0px;
 }
 
+.container-gallery-wrapper {
+  height: 338px !important;
+}
 @media screen and (min-width: 1020px) {
   .level-right {
     display: block;
+  }
+
+  .container-gallery-wrapper {
+    height: 597px !important;
   }
 }
 </style>
