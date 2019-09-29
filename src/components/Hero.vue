@@ -14,7 +14,9 @@
         <h2 class="subtitle is-4 has-text-weight-bold">
           +381 64 64 00 022
         </h2>
-        <a class="button is-dark is-medium">POGLEDAJ MAPU</a>
+        <router-link to="/contact">
+          <a class="button is-dark is-medium">POGLEDAJ MAPU</a>
+        </router-link>
       </div>
     </div>
   </section>
