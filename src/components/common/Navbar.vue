@@ -218,7 +218,8 @@ a.nav-item-logo--mobile {
   .nav-brand {
     position: unset;
     margin-top: 3rem;
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .nav-item img {
